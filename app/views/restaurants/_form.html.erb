@@ -1,5 +1,4 @@
-<%= simple_form_for(@restaurant) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for(@restaurant, data: { turbo: false }) do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :category %>
